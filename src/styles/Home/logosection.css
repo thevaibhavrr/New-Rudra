@@ -1,0 +1,11 @@
+.logo_main_div_home_page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--black-color);
+}
+.main_logo_home_page{
+    width: 200px;
+}

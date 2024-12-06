@@ -1,0 +1,21 @@
+.home_details_main_div{
+    height: 70vh;
+    width: 100%;
+    background: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.home_details_div{
+    width: 50%;
+    color: var(--border-gray-color);
+
+    text-align: center;
+    font-size: 20px;
+    word-spacing: 1px;
+    letter-spacing: 1px ;
+    font-weight: 300;
+}
