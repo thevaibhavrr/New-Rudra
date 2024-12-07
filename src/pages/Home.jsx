@@ -7,7 +7,7 @@ import Footer from '../Components/footer/footer'
 
 function Home() {
   return (
-    <div className='main_divs_comman' >
+    <div >
         <Logosection/>
         <Homedetails/>  
         <HomeProduct/>

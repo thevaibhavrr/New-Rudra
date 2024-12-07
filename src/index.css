@@ -1,7 +1,7 @@
 :root{
-
-    /* fonts */
-    --Tommay-font-1: 'Made Tommay Soft';
+  /* fonts */
+  --Tommay-font-1: 'Made Tommay Soft';
+  --Paradroid-Mono-2: 'Paradroid Mono';
   
     /* colors */
     --black-color: #000000;
@@ -9,7 +9,7 @@
     --orange-color: #FF5700;
     --border-gray-color :#606060;
     --light-gray-color :#D9D9D9;
-  
+    
   }
   
   @font-face {
@@ -19,6 +19,13 @@
     font-style: normal;
   }
   
+  @font-face {
+    font-family: 'Paradroid Mono';
+    src: url('./assets/font/ParadroidMono-Light.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+    
 
   .main_divs_comman{
     margin: 0;

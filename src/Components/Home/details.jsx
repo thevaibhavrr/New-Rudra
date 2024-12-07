@@ -8,6 +8,8 @@ function Homedetails() {
 
   return (
     <>
+    <div className='home_details_main_div_parent' >
+
     <div className='home_details_main_div' >
         <div className='home_details_div' >
             {firstmessage}
@@ -18,6 +20,7 @@ function Homedetails() {
         <div className='home_details_div' >
             {thirdmessage}
         </div>
+    </div>
     </div>
         
     </>

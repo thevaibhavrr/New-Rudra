@@ -1,11 +1,179 @@
-.logo_main_div_home_page{
-    height: 100vh;
+/* .logo_main_div_home_page {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .empty_black {
+    height: 100vh;
+    width: 100%;
     background: var(--black-color);
-}
-.main_logo_home_page{
+  }
+  
+  .video_div {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+
+  }
+  
+  .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    top: 0;
+    left: 0;
+  }
+  
+  .logo-container {
+    content: "";
     width: 200px;
-}
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-container.fixed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../../assets/RUDRA LOGO WHITE.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 10;
+  }
+  
+  .logo-container.sticky {
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../../assets/RUDRA LOGO WHITE.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 10;
+  }
+  
+  */
+
+
+  .logo_main_div_home_page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .empty_black {
+    height: 100vh;
+    width: 100%;
+    background: var(--black-color);
+  }
+  
+  .video_div {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+  }
+  
+  .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    top: 0;
+    left: 0;
+  }
+  
+  .logo-container {
+    content: "";
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-container.fixed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../../assets/RUDRA LOGO WHITE.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 10;
+  }
+  
+  .logo-container.sticky {
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../../assets/RUDRA LOGO WHITE.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 10;
+  }
+  
+  @media (max-width: 1200px) {
+    .logo-container {
+      width: 150px;
+      height: 75px;
+    }
+  
+    .background-video {
+      object-position: center center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo-container {
+      width: 120px;
+      height: 60px;
+    }
+  
+    .background-video {
+      object-position: top center;
+    }
+  
+    .empty_black {
+      height: 80vh;
+    }
+  
+    .video_div {
+      height: 80vh;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-container {
+      width: 100px;
+      height: 50px;
+    }
+  
+    .background-video {
+      object-position: top center;
+    }
+  
+    .empty_black {
+      height: 70vh;
+    }
+  
+    .video_div {
+      height: 70vh;
+    }
+  }
+  
