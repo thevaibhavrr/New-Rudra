@@ -9,7 +9,7 @@ function Home() {
   return (
     <div >
         <Logosection/>
-        <Homedetails/>  
+        {/* <Homedetails/>   */}
         <HomeProduct/>
         <Facilities/>
         <Footer/>

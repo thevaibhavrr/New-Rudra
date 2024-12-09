@@ -1,42 +1,67 @@
-import React, { useEffect, useState } from 'react';
+
+// import React from 'react';
+// import "../../styles/Home/logosection.css";
+// import Vid from "../../assets/Home/homevid.mp4";
+// import Homedetails from './details';
+
+// function Logosection() {
+//   return (
+//     <>
+//     <div className='logo_main_div_home_page'>
+//       <div className='video_div'>
+//         <div className='logo-container sticky'></div>
+//         <video className="background-video" autoPlay loop muted>
+//           <source src={Vid} type="video/mp4" />
+//           Your browser does not support the video tag.
+//         </video>
+//       </div>
+//     </div>
+//     <Homedetails/>  
+    
+//     </>
+//   );
+// }
+
+// export default Logosection;
+
+import React from "react";
+import { motion, useInView } from "framer-motion";
 import "../../styles/Home/logosection.css";
-import MainLogo from "../../assets/RUDRA LOGO WHITE.png";
 import Vid from "../../assets/Home/homevid.mp4";
+import Homedetails from "./details";
+
 function Logosection() {
-  const [isSticky, setIsSticky] = useState(false);
-
-
-  const handleScroll = () => {
-    if (window.scrollY >= 950) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: false, amount: 0.5 });
 
   return (
     <>
-      <div className='logo_main_div_home_page'>
-        <div className='empty_black'>
-          k
-        </div>
-        <div className={`logo-container ${isSticky ? 'sticky' : 'fixed'}`}></div>
-        <div className={`video_div newimage ${isSticky ? 'stickyimage' : ''}`}>
+      <motion.div
+        ref={ref}
+        className="logo_main_div_home_page"
+        initial={{ opacity: 1 }}
+        // animate={{ opacity: isInView ? 1 : 0 }}
+        animate={{ opacity: isInView ? 1 : 0 , height: isInView ? "120vh" : "80vh" }}
+
+        transition={{ duration: 1 }}
+      >
+        <div className="video_div">
+          <div className="logo-container sticky"></div>
           <video className="background-video" autoPlay loop muted>
-            {/* Make sure Vid is a valid path */}
             <source src={Vid} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
+      </motion.div>
 
-      </div>
+      <motion.div
+        className="details_section"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isInView ? 0 : 1 }}
+        transition={{ duration: 1 }}
+      >
+        <Homedetails />
+      </motion.div>
     </>
   );
 }
