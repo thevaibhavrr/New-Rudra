@@ -1,0 +1,194 @@
+.whychoose_main_div_about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: var(--Paradroid-Mono-2);
+}
+.whychoose_main_div_about_text {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.whychoose_main_div_about_cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+/* cards */
+.whychoose_main_div_about_cards_main_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: var(--Paradroid-Mono-2);
+  width: 50%;
+  position: relative;
+  /* background: #000; */
+}
+
+.whychoose_main_div_about_cards_main_div_image {
+  width: 500px;
+}
+.whychoose_main_div_about_cards_main_div_image img {
+  max-height: 600px;
+  width: 100%;
+}
+
+.whychoose_main_div_about_cards_main_div_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: var(--Paradroid-Mono-2);
+  width: 70%;
+  background: #e5e4e4ee;
+  border-radius: 12px;
+  position: absolute;
+  bottom: 10%;
+}
+
+.whychoose_main_div_about_cards_main_div_text_title {
+  font-size: 19px;
+  width: 100%;
+  font-weight: 500;
+}
+.whychoose_main_div_about_cards_main_div_text_message {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1200px) {
+  .whychoose_main_div_about_cards_main_div_image {
+    width: 400px;
+  }
+  .whychoose_main_div_about_cards_main_div_image img {
+    max-height: 600px;
+    width: 100%;
+  }
+
+  .whychoose_main_div_about_cards_main_div_text {
+    width: 80%;
+    bottom: 10%;
+  }
+
+  .whychoose_main_div_about_cards_main_div_text_title {
+    font-size: 18px;
+  }
+  .whychoose_main_div_about_cards_main_div_text_message {
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+}
+@media (max-width: 950px) {
+  .whychoose_main_div_about_cards_main_div_image {
+    width: 300px;
+  }
+  .whychoose_main_div_about_cards_main_div_image img {
+    max-height: 600px;
+    width: 100%;
+  }
+
+  .whychoose_main_div_about_cards_main_div_text {
+    width: 90%;
+    bottom: 10%;
+  }
+
+  .whychoose_main_div_about_cards_main_div_text_title {
+    font-size: 17px;
+  }
+  .whychoose_main_div_about_cards_main_div_text_message {
+    font-size: 13px;
+  }
+}
+@media (max-width: 760px) {
+  .whychoose_main_div_about_cards_main_div_image {
+    width: 270px;
+  }
+  .whychoose_main_div_about_cards_main_div_image img {
+    max-height: 600px;
+    width: 100%;
+  }
+
+  .whychoose_main_div_about_cards_main_div_text {
+    width: 80%;
+    bottom: 10%;
+  }
+
+  .whychoose_main_div_about_cards_main_div_text_title {
+    font-size: 15px;
+  }
+  .whychoose_main_div_about_cards_main_div_text_message {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 510px) {
+
+      .whychoose_main_div_about_cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      /* cards */
+      .whychoose_main_div_about_cards_main_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        width: 100%;
+      }
+      
+      .whychoose_main_div_about_cards_main_div_image {
+        width: 400px;
+      }
+      .whychoose_main_div_about_cards_main_div_image img {
+        max-height: 600px;
+        width: 100%;
+      }
+      
+      .whychoose_main_div_about_cards_main_div_text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: var(--Paradroid-Mono-2);
+        width: 87%;
+        background: #e5e4e4ee;
+        border-radius: 12px;
+        position: absolute;
+        bottom: 10%;
+      }
+      
+      .whychoose_main_div_about_cards_main_div_text_title {
+        font-size: 19px;
+        width: 100%;
+        font-weight: 500;
+      }
+      .whychoose_main_div_about_cards_main_div_text_message {
+        text-align: justify;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+      
+}
