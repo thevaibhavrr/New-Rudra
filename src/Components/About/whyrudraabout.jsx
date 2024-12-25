@@ -1,47 +1,112 @@
-import React from 'react'
-import FistImage from "../../assets/about/about 1.png"
-import SecondImage from "../../assets/about/about 2.png"
-import ThirdImage from "../../assets/about/about 3.png"
-import FourthImage from "../../assets/about/about 4.png"
-import FifthImage from "../../assets/about/about 5.png"
-import SixthImage from "../../assets/about/about 6.png"
+import React, { useState } from 'react';
+import FistImage from "../../assets/about/about 1.png";
+import SecondImage from "../../assets/about/about 2.png";
+import ThirdImage from "../../assets/about/about 3.png";
+import FourthImage from "../../assets/about/about 4.png";
+import FifthImage from "../../assets/about/about 5.png";
+import SixthImage from "../../assets/about/about 6.png";
+import "../../styles/about/whyrudraabout.css";
 
-import "../../styles/about/whyrudraabout.css"
 function Whyrudraabout() {
+    const [selectedOption, setSelectedOption] = useState({
+        image: FistImage,
+        title: "Advanced Production Facilities:",
+        message: "Our state-of-the-art facilities provide unrivaled process control, repeatability, and reliability. We maintain rigorous standards throughout the manufacturing process to meet your needs precisely.",
+    });
+
+    const options = [
+        {
+            image: FistImage,
+            title: "Advanced Production Facilities:",
+            message: "Our state-of-the-art facilities provide unrivaled process control, repeatability, and reliability. We maintain rigorous standards throughout the manufacturing process to meet your needs precisely.",
+        },
+        {
+            image: SecondImage,
+            title: "Reliable Delivery:",
+            message: "Enjoy an on-time delivery rate of almost 100%, thanks to our unique Work-In-Progress Inventory Tracking system. Our Just-In-Time delivery capability allows us to respond swiftly to engineering changes or new product launches.",
+        },
+        {
+            image: ThirdImage,
+            title: "Superior Quality:",
+            message: "Our products meet the highest quality standards, delivered on time, ensuring the lowest total cost for our customers.",
+        },
+        {
+            image: FourthImage,
+            title: "Fast Lead Times:",
+            message: "We offer unprecedented lead times of just 2 to 3 weeks for new product launches, compared to the industry standard of 6 to 8 weeks.",
+        },
+        {
+            image: FifthImage,
+            title: "Comprehensive In-House Services:",
+            message: "We offer in-house tooling, heat treatment, assembly, machining, and other finishing services, ensuring fast and reliable completion of projects.",
+        },
+        {
+            image: SixthImage,
+            title: "Rapid Prototyping:",
+            message: "By leveraging cutting-edge technologies, we can create wax prototypes for your castings within days. These prototypes can then quickly move into production, allowing us to deliver finished castings in as little as a week.",
+        },
+    ];
+
     return (
-        <div className='whychoose_main_div_about' >
-            <div className='whychoose_main_div_about_text' >Why Choose Rudra Castings?</div>
-            {/* cards */}
-            <div className='whychoose_main_div_about_cards' >
-                <Whychoosecards Image={FistImage} text="Advanced Production Facilities:" message="Our state-of-the-art facilities provide unrivaled process control, repeatability, and reliability. We maintain rigorous standards throughout the manufacturing process to meet your needs precisely." />
-                <Whychoosecards Image={SecondImage} text="Reliable Delivery:" message="Enjoy an on-time delivery rate of almost 100%, thanks to our unique Work-In-Progress Inventory Tracking system. Our Just-In-Time delivery capability allows us to respond swiftly to engineering changes or new product launches." />
-                <Whychoosecards Image={ThirdImage} text="Superior Quality:" message="Our products meet the highest quality standards, delivered on time, ensuring the lowest total cost for our customers." />
-                <Whychoosecards Image={FourthImage} text="Fast Lead Times:" message="We offer unprecedented lead times of just 2 to 3 weeks for new product launches, compared to the industry standard of 6 to 8 weeks." />
-                <Whychoosecards Image={FifthImage} text="Comprehensive In-House Services:" message="We offer in-house tooling, heat treatment, assembly, machining, and other finishing services, ensuring fast and reliable completion of projects." />
-                <Whychoosecards Image={SixthImage} text="Rapid Prototyping:" message="By leveraging cutting-edge technologies, we can create wax prototypes for your castings within days. These prototypes can then quickly move into production, allowing us to deliver finished castings in as little as a week." />
-
-
+        <div className="whychoose_main_div_about">
+            <div className="whychoose_main_div_about_text">Why Choose Rudra Castings?</div>
+            <div className="whychoose_main_div_about_container">
+                <div className="whychoose_main_div_about_options">
+                    {options.map((option, index) => (
+                        <div
+                            key={index}
+                            className={`whychoose_option ${selectedOption.title === option.title ? 'active' : ''}`}
+                            onClick={() => setSelectedOption(option)}
+                        >
+                            <span className="option_text">{option.title}</span>
+                            {selectedOption.title === option.title ? (
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    className="bi bi-chevron-down"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        fillRule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                                    />
+                                </svg>
+                            ) : (
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    className="bi bi-chevron-right"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        fillRule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                                    />
+                                </svg>
+                            )}
+                        </div>
+                    ))}
+                </div>
+                <div className="whychoose_main_div_about_display">
+                    <div className="image_wrapper">
+                        <img 
+                            src={selectedOption.image} 
+                            alt={selectedOption.title} 
+                            className="display_image fade-in"
+                        />
+                    </div>
+                    <div className="display_content">
+                        <h3>{selectedOption.title}</h3>
+                        <p>{selectedOption.message}</p>
+                    </div>
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Whyrudraabout
-
-function Whychoosecards({Image ,text,message }) {
-    return (
-        <div className='whychoose_main_div_about_cards_main_div' >
-            {/* image */}
-            <div className='whychoose_main_div_about_cards_main_div_image' >
-                <img src={Image} alt="" />
-            </div>
-            {/* text */}
-            <div className='whychoose_main_div_about_cards_main_div_text' >
-                    {/* title */}
-                    <div className='whychoose_main_div_about_cards_main_div_text_title' >{text}</div>
-                    {/* message */}
-                    <div className='whychoose_main_div_about_cards_main_div_text_message' >{message}</div>
-            </div>
-        </div>
-    )
-}
+export default Whyrudraabout;

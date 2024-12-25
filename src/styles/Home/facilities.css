@@ -1,4 +1,4 @@
-.home_facilities_main_div {
+/* .home_facilities_main_div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,6 @@
     margin-top: 200px;
     padding: 0 20px;
     font-family: var(--Paradroid-Mono-2);
-
 }
 
 .home_facilities_div {
@@ -103,4 +102,58 @@
     .darkgray_div_home_facilities_mesaage {
         font-size: 10px;
     }
+} */
+
+
+.home_facilities_main_div{
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/Home/homebg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 100px;
+    font-family: var(--Paradroid-Mono-2);
 }
+
+.home_facilities_card_div{
+    display: flex;
+    width: 40%;
+    gap: 40px;
+    justify-content: space-evenly;
+    background: #0000005d;
+    padding: 20px 40px;
+    color: white;
+    border-radius: 12px;
+}
+.home_facilities_card_div_top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.home_facilities_card_div_top_title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.home_facilities_card_div_top_mesaage{
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.home_facilities_card_div_bottom{
+    width: 20%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_facilities_card_div_bottom img{
+    width: 100%;
+}
+
