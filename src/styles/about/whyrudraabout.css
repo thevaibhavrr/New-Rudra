@@ -4,6 +4,7 @@
   align-items: center;
   padding: 30px;
   font-family: var(--Paradroid-Mono-2);
+  min-height: 750px;
 }
 
 .whychoose_main_div_about_text {
@@ -138,3 +139,5 @@
   border-color: #000000;
   color: #ffffff;
 }
+
+

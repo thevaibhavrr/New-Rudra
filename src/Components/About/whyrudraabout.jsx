@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion'; // Importing framer-motion
 import FistImage from "../../assets/about/about 1.png";
 import SecondImage from "../../assets/about/about 2.png";
 import ThirdImage from "../../assets/about/about 3.png";
@@ -59,51 +60,84 @@ function Whyrudraabout() {
                             onClick={() => setSelectedOption(option)}
                         >
                             <span className="option_text">{option.title}</span>
-                            {selectedOption.title === option.title ? (
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
-                                    fill="currentColor"
-                                    className="bi bi-chevron-down"
-                                    viewBox="0 0 16 16"
-                                >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                                    />
-                                </svg>
-                            ) : (
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
-                                    fill="currentColor"
-                                    className="bi bi-chevron-right"
-                                    viewBox="0 0 16 16"
-                                >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                                    />
-                                </svg>
-                            )}
+                            <motion.div
+                                initial={{ rotate: 0 }}
+                                animate={{
+                                    rotate: selectedOption.title === option.title ? 180 : 0,
+                                    opacity: selectedOption.title === option.title ? 1 : 0.6,
+                                }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                {selectedOption.title === option.title ? (
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        className="bi bi-chevron-down"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                                        />
+                                    </svg>
+                                ) : (
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        className="bi bi-chevron-right"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                                        />
+                                    </svg>
+                                )}
+                            </motion.div>
                         </div>
                     ))}
                 </div>
-                <div className="whychoose_main_div_about_display">
+                
+                {/* Motion div with key for re-rendering */}
+                <motion.div
+                    key={selectedOption.title} // Add key to trigger remount animation
+                    className="whychoose_main_div_about_display"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.8 }}
+                    transition={{ duration: 0.5 }}
+                >
                     <div className="image_wrapper">
-                        <img 
+                        <motion.img 
                             src={selectedOption.image} 
                             alt={selectedOption.title} 
-                            className="display_image fade-in"
+                            className="display_image"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.5 }}
                         />
                     </div>
                     <div className="display_content">
-                        <h3>{selectedOption.title}</h3>
-                        <p>{selectedOption.message}</p>
+                        <motion.h3
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            {selectedOption.title}
+                        </motion.h3>
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            {selectedOption.message}
+                        </motion.p>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     );
