@@ -1,4 +1,4 @@
-
+/*  
 
    * {
     margin: 0;
@@ -47,6 +47,79 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+  }
+  
+  .details_section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    position: relative;
+    z-index: 2;
+    color: black;
+  }
+  
+   */
+   
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .logo_main_div_home_page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: black;
+  }
+  
+  .video_div {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 120vh;
+  }
+  
+  .background-video {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+  
+  .logo-container {
+    content: "";
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/RUDRA LOGO WHITE.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .logo-container.sticky {
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .logo-container.fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 100%;
+    background-color: rgb(3, 3, 3); /* Optional: Add a background color if needed */
   }
   
   .details_section {
