@@ -13,7 +13,6 @@ function Home() {
         <Homedetails/>  
         <HomeProduct/>
         <Facilities/>
-        <Footer/>
     </div>
   )
 }
