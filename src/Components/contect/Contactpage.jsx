@@ -5,7 +5,7 @@ import SecondImage from "../../assets/contect/contect2.png";
 function Contactpage() {
     return (
         <div>
-
+            <div style={{ height: "100px" }} ></div>
             <ContactPage />
             <Reacttous />
 

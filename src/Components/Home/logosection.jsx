@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../../styles/Home/logosection.css";
 import Vid from "../../assets/Home/homevid.mp4";
-import Homedetails from "./details";
 
 function Logosection() {
   const ref = React.useRef(null);
@@ -12,7 +11,7 @@ function Logosection() {
     const handleScroll = () => {
       if (ref.current) {
         const rect = ref.current.getBoundingClientRect();
-        setFixed(rect.bottom <= window.innerHeight * 0.1); 
+        setFixed(rect.bottom <= window.innerHeight * 0.2); 
       }
     };
 

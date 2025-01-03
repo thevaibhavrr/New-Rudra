@@ -1,0 +1,19 @@
+.navbar_main_div{
+    display: flex;
+    align-items: center;
+    background: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+.navbar_main_logo{
+    width: 95%;
+    text-align: center;
+    }
+    
+.right_clickable_dropdown{
+    width: 5%;
+    text-align: center;
+    color: white;
+
+} 
