@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 200px;
+  gap: 100px;
   align-items: center;
   padding: 20px;
+  padding-bottom: 0px;
   box-sizing: border-box;
   font-family: var(--Paradroid-Mono-2);
 

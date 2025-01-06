@@ -2,14 +2,20 @@ import React from 'react'
 import "./contect.css"
 import FirstImage from "../../assets/contect/contect1.png";
 import SecondImage from "../../assets/contect/contect2.png";
+import Navbar from '../utils/Navbar';
 function Contactpage() {
     return (
         <div>
-            <div style={{ height: "100px" }} ></div>
-            <ContactPage />
-            <Reacttous />
+            <Navbar />
+            <div>
+                <ContactPage />
+            </div>
+            <div>
 
-          
+                <Reacttous />
+            </div>
+
+
         </div>
     )
 }
@@ -27,7 +33,7 @@ function ContactPage() {
                 <div className='contact_us_data' >
                     <div>
                         <div className='contact_us_title'>PHONE NUMBER</div>
-                        <div className='contact_us_details'>+91 1234567890</div>
+                        <div className='contact_us_details'>+91 95242 00019</div>
                     </div>
                     <div>
                         <div className='contact_us_title'>ADDRESS</div>

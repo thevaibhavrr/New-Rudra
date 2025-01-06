@@ -7,12 +7,17 @@
     z-index: 999999;
 }
 .navbar_main_logo{
-    width: 95%;
+    width: 100%;
     text-align: center;
+    }
+    .navbar_main_logo img{
+        width: 130px;
     }
     
 .right_clickable_dropdown{
-    width: 5%;
+    width: 10%;
+    /* background: white; */
+    /* padding-right: 40px; */
     text-align: center;
     color: white;
 } 

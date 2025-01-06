@@ -1,0 +1,142 @@
+/* .process_parent_main_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 100px;
+}
+
+.process_main_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    background: #ebebeb36;
+    backdrop-filter: blur(10px);
+    padding: 50px 50px;
+    border-radius: 30px;
+}
+
+.process_steps{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.process_step{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    font-family: var(--Paradroid-Mono-2);
+}
+.step_title{
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.step_description{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 15px;
+}
+
+
+.process_images_first_div,.process_images_second_div,.process_images_third_div{
+    position: absolute;
+}
+.process_image_first,.process_image_second,.process_image_third{
+    width: 200px;
+}
+
+.process_images_first_div{
+    top: 3%;
+    left: 15%;
+}
+.process_image_second{
+    width: 250px;
+    left: 40%;
+    top: 10%;
+    background: #000;
+}
+
+
+ */
+
+.process_parent_main_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensures child elements with absolute positioning are positioned relative to this container */
+    padding: 100px;
+}
+
+.process_main_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    background: #ebebeb36;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.process_steps {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.process_step {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    justify-content: center;
+    font-family: var(--Paradroid-Mono-2);
+}
+
+.step_title {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.step_description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 15px;
+}
+
+.process_images_first_div,
+.process_images_second_div,
+.process_images_third_div {
+    position: absolute;
+}
+
+.process_image_first,
+.process_image_second,
+.process_image_third {
+    width: 200px;
+}
+
+.process_images_first_div {
+    top: 3%;
+    left: 15%;
+}
+
+.process_images_second_div {
+    top: 40%;
+    right: 20%; 
+}
+
+
+.process_images_third_div{
+    left: 15%;
+    bottom: 13%;
+}
