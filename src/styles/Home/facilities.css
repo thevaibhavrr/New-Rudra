@@ -1,111 +1,4 @@
-/* .home_facilities_main_div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: var(--white-color);
-    gap: 40px;
-    margin-top: 200px;
-    padding: 0 20px;
-    font-family: var(--Paradroid-Mono-2);
-}
-
-.home_facilities_div {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.darkgray_div_home_facilities {
-    width: 300px;
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: flex-start;
-    gap: 40px;
-    border-radius: 30px;
-    padding: 30px;
-}
-
-.darkgray_div_home_facilities_color {
-    background: var(--border-gray-color);
-    color: var(--light-gray-color);
-}
-
-.lightgray_div_home_facilities_color {
-    background: var(--light-gray-color);
-    color: var(--border-gray-color);
-}
-
-.darkgray_div_home_facilities_title {
-    font-size: 23px;
-    font-weight: 300;
-}
-
-.darkgray_div_home_facilities_mesaage {
-    font-size: 14px;
-    letter-spacing: 2px;
-    font-weight: 300;
-}
-
-@media (max-width: 1200px) {
-    .home_facilities_div {
-        gap: 20px;
-    }
-
-    .darkgray_div_home_facilities {
-        width: 220px;
-        height: 160px;
-    }
-
-    .darkgray_div_home_facilities_title {
-        font-size: 20px;
-    }
-
-    .darkgray_div_home_facilities_mesaage {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 768px) {
-    .home_facilities_main_div {
-        margin-top: 100px;
-    }
-
-    .darkgray_div_home_facilities {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-    }
-
-    .darkgray_div_home_facilities_title {
-        font-size: 18px;
-    }
-
-    .darkgray_div_home_facilities_mesaage {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 480px) {
-    .darkgray_div_home_facilities {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .darkgray_div_home_facilities_title {
-        font-size: 16px;
-    }
-
-    .darkgray_div_home_facilities_mesaage {
-        font-size: 10px;
-    }
-} */
-
-
-.home_facilities_main_div{
+/* .home_facilities_main_div{
     height: 100%;
     width: 100%;
     background-image: url('../../assets/Home/homebg.png');
@@ -156,4 +49,167 @@
 .home_facilities_card_div_bottom img{
     width: 100%;
 }
+ */
 
+
+ /* Main wrapper */
+.home_facilities_main_div {
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/Home/homebg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 100px;
+    font-family: var(--Paradroid-Mono-2);
+    box-sizing: border-box;
+}
+
+/* Cards container */
+.home_facilities_card_div {
+    display: flex;
+    width: 40%;
+    gap: 40px;
+    justify-content: space-evenly;
+    background: #0000005d;
+    padding: 20px 40px;
+    color: white;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+/* Top part of the card */
+.home_facilities_card_div_top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Title inside the card */
+.home_facilities_card_div_top_title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Message inside the card */
+.home_facilities_card_div_top_mesaage {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+/* Bottom part of the card (image) */
+.home_facilities_card_div_bottom {
+    width: 20%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_facilities_card_div_bottom img {
+    width: 100%;
+}
+
+/* Mobile-first approach: Set for small screens by default */
+
+/* Large screens */
+@media (min-width: 1024px) {
+    .home_facilities_card_div {
+        width: 40%; /* 40% width for large screens */
+    }
+
+    .home_facilities_main_div {
+        gap: 80px;
+        padding: 100px;
+    }
+}
+
+/* Tablets (smaller than 1024px, but larger than 768px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .home_facilities_card_div {
+        width: 45%; /* Adjusting card width */
+    }
+
+    .home_facilities_main_div {
+        gap: 60px;
+        padding: 80px;
+    }
+
+    /* Adjusting text size for medium screens */
+    .home_facilities_card_div_top_title {
+        font-size: 18px;
+    }
+
+    .home_facilities_card_div_top_mesaage {
+        font-size: 13px;
+    }
+
+    .home_facilities_card_div_bottom img {
+        max-width: 80%; /* Allow image to shrink a bit */
+    }
+}
+
+/* Mobile screens (smaller than 768px) */
+@media (max-width: 768px) {
+    .home_facilities_main_div {
+        gap: 30px;
+        padding: 40px;
+    }
+
+    .home_facilities_card_div {
+        width: 100%; /* Full width for mobile */
+        flex-direction: column; /* Stack content vertically */
+        padding: 15px;
+    }
+
+    .home_facilities_card_div_top_title {
+        font-size: 16px; /* Reduce title size for small screens */
+    }
+
+    .home_facilities_card_div_top_mesaage {
+        font-size: 12px; /* Reduce message size for small screens */
+    }
+
+    .home_facilities_card_div_bottom img {
+        width: 70%; /* Make image smaller for small screens */
+        margin-top: 20px;
+    }
+}
+
+/* Extra small screens (below 480px) */
+@media (max-width: 500px) {
+    .home_facilities_main_div {
+        padding: 20px;
+    }
+    
+
+    .home_facilities_card_div {
+        width: 100%; /* Full width for extremely small screens */
+        padding: 10px;
+        text-align: center;
+    }
+
+    .home_facilities_card_div_top_title {
+        font-size: 18px; /* Further reduce title size */
+        font-weight: bold;
+    }
+
+    .home_facilities_card_div_top_mesaage {
+        font-size: 15px; /* Further reduce message size */
+    }
+    .home_facilities_card_div_bottom{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .home_facilities_card_div_bottom img {
+        width: 80px; /* Even smaller image */
+    }
+}

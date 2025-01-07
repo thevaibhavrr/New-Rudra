@@ -70,3 +70,17 @@
     color: black;
   }
   
+
+  /* .navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+   */
+
+   @media (max-width:500px) {
+    .logo-container{
+      height: 70px;
+    }
+   }
