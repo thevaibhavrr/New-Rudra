@@ -1,0 +1,49 @@
+.main_applications_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 50px;
+}
+
+.applications_details_main_div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 80%;
+}
+
+.applications_details_image_div{
+    position: relative;
+    max-width: 450px;
+}
+
+.applications_details_image_div_data{
+    position: absolute;
+    background: #d2d2d20e;
+    backdrop-filter: blur(10px);
+    top: 20%;
+    left: 5%;
+    width: 85%;
+    color: white;
+    padding: 45px;
+    font-family: var(--Paradroid-Mono-2);
+    border-radius: 10px;
+}
+.applications_details_image_div_data_title{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: var(--Tommay-font-1);
+}
+.applications_details_image_div_data_mesaage{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.applications_images{
+    width: 100%;
+}

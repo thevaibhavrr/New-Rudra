@@ -3,6 +3,7 @@ import InvestmentTop from '../Components/Investment/InvestmentTop'
 import Keyfeatures from '../Components/Investment/Keyfeatures'
 import Advantages from '../Components/Investment/Advantages'
 import Process from '../Components/Investment/Process'
+import Applications from '../Components/Investment/Applications'
 
 function Investment() {
   return (
@@ -11,6 +12,7 @@ function Investment() {
         <Keyfeatures/>
         <Process/>
         <Advantages/>
+        <Applications/>
     </div>
   )
 }
