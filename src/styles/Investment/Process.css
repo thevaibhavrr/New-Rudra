@@ -71,7 +71,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Ensures child elements with absolute positioning are positioned relative to this container */
+    position: relative; 
     padding: 100px;
 }
 
@@ -139,4 +139,177 @@
 .process_images_third_div{
     left: 15%;
     bottom: 13%;
+}
+
+@media (max-width:1030px) {
+    .process_parent_main_div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 70px;
+    }
+    
+    .process_main_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        padding: 40px;
+        border-radius: 30px;
+    }
+    
+
+    
+    .step_title {
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .step_description {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-size: 15px;
+    }
+    
+    .process_image_first,
+    .process_image_second,
+    .process_image_third {
+        width: 200px;
+    }
+    
+    .process_images_first_div {
+        top: 3%;
+        left: 10%;
+    }
+    
+    .process_images_second_div {
+        top: 40%;
+        right: 10%; 
+    }
+    
+    
+    .process_images_third_div{
+        left: 10%;
+        bottom: 10%;
+    }
+    
+}
+
+@media (max-width:770px) {
+    .process_parent_main_div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 70px;
+    }
+    
+    .process_main_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        padding: 30px;
+    }
+    
+
+    
+    .step_title {
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .step_description {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-size: 15px;
+    }
+    
+    .process_image_first,
+    .process_image_second,
+    .process_image_third {
+        width: 200px;
+    }
+    
+    .process_images_first_div {
+        top: 3%;
+        left: 8%;
+    }
+    
+    .process_images_second_div {
+        top: 40%;
+        right: 8%; 
+    }
+    
+    
+    .process_images_third_div{
+        left: 8%;
+        bottom: 8%;
+    }
+    
+}
+
+
+@media (max-width:500px) {
+    .process_parent_main_div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 10px;
+    }
+    
+    .process_main_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 95%;
+        padding: 20px;
+    }
+    
+
+    
+    .step_title {
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .step_description {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-size: 15px;
+    }
+    
+    .process_image_first,
+    .process_image_second,
+    .process_image_third {
+        width: 200px;
+    }
+    
+    .process_images_first_div {
+        top: 3%;
+        left: 8%;
+    }
+    
+    .process_images_second_div {
+        top: 40%;
+        right: 8%; 
+    }
+    
+    
+    .process_images_third_div{
+        left: 8%;
+        bottom: 8%;
+    }
+    
 }

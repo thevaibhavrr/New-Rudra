@@ -183,7 +183,7 @@ function Process() {
             </div>
 
             <div className="process_main_div">
-                <div className="investment_top_title">The Investment Casting Process</div>
+                <div className="investment_top_title" style={{ textAlign: "center"}} >The Investment Casting Process</div>
                 <div className="process_steps">
                     {data.map((step, index) => (
                         <div key={index} className="process_step">
