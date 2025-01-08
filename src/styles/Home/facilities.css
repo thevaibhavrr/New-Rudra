@@ -82,6 +82,11 @@
     border-radius: 12px;
     box-sizing: border-box;
 }
+.home_facilities_card_div:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
 
 /* Top part of the card */
 .home_facilities_card_div_top {
