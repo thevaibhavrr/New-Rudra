@@ -30,8 +30,9 @@
   .logo-container {
     content: "";
     width: 150px;
-    height: 100px;
+    height: 80px;
     display: flex;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     background-image: url("../../assets/RUDRA LOGO WHITE.png");
