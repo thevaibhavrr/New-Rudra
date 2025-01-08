@@ -1,23 +1,70 @@
-.keyfeature_main_div{
+.keyfeature_main_div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--white-color);
+  gap: 40px;
+  font-family: var(--Paradroid-Mono-2);
+}
+
+.keyfeature_mesaage_main_div {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 80%;
+}
+
+.keyfeature_mesaage_div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-weight: 600;
+  font-size: 15px;
+}
+.keyfeature_mesaage_main_div_for_advantages {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.keyfeature_video_div {
+  width: 100%;
+}
+.keyfeature_video {
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media (max-width: 1030px) {
+  .keyfeature_main_div {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: var(--white-color);
-    gap: 40px;
-    font-family: var(--Paradroid-Mono-2);
-}
+    gap: 20px;
+  }
 
-.keyfeature_mesaage_main_div{
+  .keyfeature_mesaage_main_div {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    width: 80%;
-}
+    gap: 10px;
+    width: 85%;
+  }
 
-.keyfeature_mesaage_div{
+  .keyfeature_mesaage_div {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -26,8 +73,8 @@
     gap: 30px;
     font-weight: 600;
     font-size: 15px;
-}
-.keyfeature_mesaage_main_div_for_advantages{
+  }
+  .keyfeature_mesaage_main_div_for_advantages {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -36,12 +83,115 @@
     gap: 30px;
     font-weight: 500;
     font-size: 16px;
-}
+  }
 
-.keyfeature_video_div{
+  .keyfeature_video_div {
     width: 100%;
-}
-.keyfeature_video{
-    width: 100%;
+    display: flex;
+    justify-content: center;
     border-radius: 20px;
+  }
+  .keyfeature_video {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 780px) {
+  .keyfeature_main_div {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .keyfeature_mesaage_main_div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+  }
+
+  .keyfeature_mesaage_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .keyfeature_mesaage_main_div_for_advantages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .keyfeature_video_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .keyfeature_video {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .keyfeature_main_div {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .keyfeature_mesaage_main_div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+  }
+
+  .keyfeature_mesaage_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .keyfeature_mesaage_main_div_for_advantages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .keyfeature_video_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .keyfeature_video {
+    width: 100%;
+  }
 }

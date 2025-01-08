@@ -47,3 +47,75 @@
 .applications_images{
     width: 100%;
 }
+
+@media (max-width:1030px) {
+ 
+    .main_applications_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 50px;
+    }
+    
+    .applications_details_main_div{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+    }
+}
+@media (max-width:780px) {
+    .main_applications_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 30px;
+    }
+    
+    .applications_details_image_div{
+        position: relative;
+        max-width: 300px;
+    }
+    .applications_details_image_div_data{
+        padding: 20px;
+    }
+    .applications_details_image_div_data_title {
+        font-size: 15px;
+    }
+    .applications_details_image_div_data_mesaage{
+        font-size: 13px;
+    }
+    
+}
+@media (max-width:500px) {
+    .main_applications_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 30px;
+    }
+    
+    .applications_details_image_div{
+        position: relative;
+        max-width: 320px;
+    }
+    .applications_details_image_div_data{
+        padding: 23px;
+    }
+    .applications_details_image_div_data_title {
+        font-size: 15px;
+    }
+    .applications_details_image_div_data_mesaage{
+        font-size: 13px;
+    }
+    
+}
