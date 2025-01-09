@@ -468,7 +468,7 @@
     position: absolute;
     z-index: -1;
     left: 25%;
-    bottom: -20%;
+    bottom: -8%;
   }
   .contact_us_image_div img {
     width: 80%;
@@ -544,8 +544,8 @@
   .reach_us_image_div {
     position: absolute;
     z-index: -1;
-    right: -2%;
-    bottom: -49%;
+    right: -0%;
+    bottom: -57%;
   }
   .reach_us_image_div img {
     width: 80%;
