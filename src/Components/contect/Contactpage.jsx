@@ -44,9 +44,29 @@ function ContactPage() {
                         <div className='contact_us_details'>info@rudracastings.com</div>
                     </div>
                 </div>
-                <div className='contact_us_button_div' >
+                {/* <div className='contact_us_button_div' >
                     <div className='contact_us_message_button' > Message Us → </div>
+                </div> */}
+
+                <div className='contact_us_button_div' style={{ display: "flex", justifyContent: "center", alignItems: "center"}} >
+                    {/* <div className='contact_us_message_button' > Message Us → </div> */}
+                    <button class="animated-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                            <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                            ></path>
+                        </svg>
+                        <span class="text">Meesage Us</span>
+                        <span class="circle"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                            <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                            ></path>
+                        </svg>
+                    </button>
+
                 </div>
+
                 <div className='contact_us_map' >
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3427.0675134双4!2d76.2931!3d30.6479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDM4JzUyLjQiTiA3NsKwMTcnMzUuMiJF!5e0!3m2!1sen!2sin!4v1625641254693!5m2!1sen!2sin"
