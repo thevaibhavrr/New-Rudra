@@ -47,24 +47,98 @@
 .applications_images{
     width: 100%;
 }
-
-@media (max-width:1030px) {
- 
-    .main_applications_div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        padding: 20px 50px;
+@media (max-width:1900px) {
+    .applications_details_image_div{
+        position: relative;
+        max-width: 600px;
     }
     
-    .applications_details_main_div{
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        width: 100%;
+    .applications_details_image_div_data{
+        position: absolute;
+        background: #d2d2d20e;
+        backdrop-filter: blur(10px);
+        top: 20%;
+        left: 5%;
+        width: 90%;
+        color: white;
+        padding: 45px;
+        font-family: var(--Paradroid-Mono-2);
+        border-radius: 10px;
+    }
+    .applications_details_image_div_data_title{
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-family: var(--Tommay-font-1);
+    }
+    .applications_details_image_div_data_mesaage{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    
+   
+}
+@media (max-width:1540px) {
+ 
+    .applications_details_image_div{
+        position: relative;
+        max-width: 500px;
+    }
+    
+    .applications_details_image_div_data{
+        position: absolute;
+        background: #d2d2d20e;
+        backdrop-filter: blur(10px);
+        top: 20%;
+        left: 5%;
+        width: 90%;
+        color: white;
+        padding: 45px;
+        font-family: var(--Paradroid-Mono-2);
+        border-radius: 10px;
+    }
+    .applications_details_image_div_data_title{
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-family: var(--Tommay-font-1);
+    }
+    .applications_details_image_div_data_mesaage{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+   
+}
+@media (max-width:1030px) {
+ 
+    .applications_details_image_div{
+        position: relative;
+        background: #000;
+        max-width: 350px;
+    }
+    
+    .applications_details_image_div_data{
+        position: absolute;
+        background: #d2d2d20e;
+        backdrop-filter: blur(10px);
+        top: 20%;
+        left: 5%;
+        width: 90%;
+        color: white;
+        padding: 30px;
+        font-family: var(--Paradroid-Mono-2);
+        border-radius: 10px;
+    }
+    .applications_details_image_div_data_title{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-family: var(--Tommay-font-1);
+    }
+    .applications_details_image_div_data_mesaage{
+        font-size: 17px;
+        font-weight: 500;
     }
 }
 @media (max-width:780px) {
@@ -80,7 +154,7 @@
     
     .applications_details_image_div{
         position: relative;
-        max-width: 300px;
+        max-width: 250px;
     }
     .applications_details_image_div_data{
         padding: 20px;
