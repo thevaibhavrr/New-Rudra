@@ -5,6 +5,7 @@
     position: fixed;
     width: 100%;
     z-index: 999999;
+    top: 0px;
 }
 .navbar_main_logo{
     width: 100%;
