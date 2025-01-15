@@ -47,7 +47,7 @@
 .applications_images{
     width: 100%;
 }
-@media (max-width:1900px) {
+@media (max-width:1950px) {
     .applications_details_image_div{
         position: relative;
         max-width: 600px;
