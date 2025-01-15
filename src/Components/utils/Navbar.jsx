@@ -24,8 +24,8 @@ function Navbar() {
                     {dropdownOpen ? (
                         <motion.svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="46"
-                            height="46"
+                            width="43"
+                            height="43"
                             fill="currentColor"
                             className="bi bi-x-lg"
                             viewBox="0 0 16 16"
@@ -38,8 +38,8 @@ function Navbar() {
                     ) : (
                         <motion.svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="46"
-                            height="46"
+                            width="43"
+                            height="43"
                             fill="currentColor"
                             className="bi bi-list"
                             viewBox="0 0 16 16"
@@ -72,6 +72,11 @@ function Navbar() {
                             </Link>
                         </li>
                         <li>
+                            <Link className='Link_tag' style={{color:"black"}} to="/about" >
+                                ABOUT US
+                            </Link>
+                        </li>
+                        <li>
                             <Link className='Link_tag' style={{color:"black"}} to="/investment" >
                                 INVESTMENT CASTING
                             </Link>
@@ -79,11 +84,6 @@ function Navbar() {
                         <li>
                             <Link className='Link_tag' style={{color:"black"}} to="/contact" >
                                 CONTACT US
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='Link_tag' style={{color:"black"}} to="/about" >
-                                ABOUT US
                             </Link>
                         </li>
                     </ul>

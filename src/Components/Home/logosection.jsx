@@ -105,6 +105,11 @@ function Logosection() {
                             </Link>
                         </li>
                         <li>
+                            <Link className='Link_tag' style={{color:"black"}} to="/about" >
+                                ABOUT US
+                            </Link>
+                        </li>
+                        <li>
                             <Link className='Link_tag' style={{color:"black"}} to="/investment" >
                                 INVESTMENT CASTING
                             </Link>
@@ -112,11 +117,6 @@ function Logosection() {
                         <li>
                             <Link className='Link_tag' style={{color:"black"}} to="/contact" >
                                 CONTACT US
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className='Link_tag' style={{color:"black"}} to="/about" >
-                                ABOUT US
                             </Link>
                         </li>
                     </ul>

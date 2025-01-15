@@ -16,6 +16,10 @@
   gap: 30px;
   width: 80%;
 }
+.keyfeature_mesaage{
+  width: 100%;
+  text-align: start;
+}
 
 .keyfeature_mesaage_div {
   width: 100%;

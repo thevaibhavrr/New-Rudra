@@ -56,7 +56,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 40px;
+  padding: 35px;
   border-radius: 12px;
   width: 40%;
 }
@@ -101,9 +101,9 @@
 }
 .form-input-contect {
   width: 100%;
-  padding-top: 40px;
-  padding-bottom: 10px;
-  font-size: 16px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 18px;
   border: none;
   border-bottom: 1px solid #ddd;
 }
@@ -115,14 +115,15 @@
   gap: 10px;
 }
 .message_box_contact_us textarea {
-  height: 150px;
+  height: 220px;
   background: rgba(255, 255, 255, 0.324);
   border-radius: 10px;
   backdrop-filter: blur(5px);
   border: none;
   padding: 10px;
   width: 100%;
-  font-size: 16px;
+  font-size: 18px;
+  outline: none;
 }
 
 .submit_button_reach_us {
@@ -167,7 +168,7 @@
   .contact_us_card_section {
     backdrop-filter: blur(4px);
     gap: 40px;
-    padding: 0 20px;
+    padding: 30px 25px;
     width: 90%;
     justify-content: space-between;
   }
@@ -192,7 +193,7 @@
   }
   .contact_us_title {
     font-size: 14px;
-    padding-bottom: 3px;
+    padding-bottom: 8px;
   }
   .contact_us_details {
     font-size: 18px;

@@ -60,7 +60,7 @@ function Whyrudraabout() {
                             onClick={() => setSelectedOption(option)}
                         >
                             <span className="option_text">{option.title}</span>
-                            <motion.div
+                            <div
                                 initial={{ rotate: 0 }}
                                 animate={{
                                     rotate: selectedOption.title === option.title ? 180 : 0,
@@ -69,38 +69,44 @@ function Whyrudraabout() {
                                 transition={{ duration: 0.3 }}
                             >
                                 {selectedOption.title === option.title ? (
-                                     <svg
-                                     xmlns="http://www.w3.org/2000/svg"
-                                     width="16"
-                                     height="16"
-                                     fill="currentColor"
-                                     className="bi bi-chevron-down"
-                                     viewBox="0 0 16 16"
-                                 >
-                                     <path
-                                         fillRule="evenodd"
-                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                                     />
-                                 </svg>
+                                    <div style={{ rotate: "-90deg" }} >
+
+                                      <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="16"
+                                      height="16"
+                                      fill="currentColor"
+                                      className="bi bi-chevron-left"
+                                      viewBox="0 0 16 16"
+                                  >
+                                      <path
+                                          fillRule="evenodd"
+                                          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                                      />
+                                  </svg>
+                                </div>
 
                                   
                                 ) : (
+                                    <div style={{ rotate: "90deg" }}  >
+
                                     <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="16"
                                     height="16"
                                     fill="currentColor"
-                                    className="bi bi-chevron-left"
+                                    className="bi bi-chevron-bottom"
                                     viewBox="0 0 16 16"
                                 >
                                     <path
                                         fillRule="evenodd"
                                         d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                                    />
+                                        />
                                 </svg>
+                                        </div>
                                    
                                 )}
-                            </motion.div>
+                            </div>
                         </div>
                     ))}
                 </div>
