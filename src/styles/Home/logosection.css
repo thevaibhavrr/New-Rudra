@@ -102,10 +102,11 @@
 
 @media (max-width: 1600px) {
   .logo_main_div_home_page {
-    margin-bottom: 240px;
+    margin-bottom: 300px;
   }
   .background-video {
-    height: 780px;
+    /* height: 780px; */
+    height: 1080px;
   }
 }
 
