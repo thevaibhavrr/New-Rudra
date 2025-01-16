@@ -85,6 +85,36 @@
     z-index: 2;
     color: black;
   }
+  @media (max-width:2000px) {
+    .logo_main_div_home_page {
+      margin-bottom: 0px;
+    }
+    .background-video {
+      width: 100%;
+      height: 900px;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      z-index: -100;
+    }
+  }
+  @media (max-width:1600px) {
+    .logo_main_div_home_page {
+      margin-bottom: 240px;
+    }
+    .background-video {
+      height: 780px;
+    }
+  }
+  
+  @media (max-width:1050px) {
+    .logo_main_div_home_page {
+      margin-bottom: 220px;
+    }
+    .background-video {
+      height: 700px;
+    }
+  }
   
   @media (max-width: 500px) {
     .logo-container {

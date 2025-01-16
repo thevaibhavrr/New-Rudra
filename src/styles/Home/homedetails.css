@@ -26,7 +26,6 @@
     font-size: 18px;
     word-spacing: 1px;
     letter-spacing: 1px;
-    font-weight: 300;
 }
 
 @media (max-width: 1024px) {
@@ -72,8 +71,7 @@
 
 .about_page_about_us_text{
     font-size: 28px;
-    font-weight: 400;
     margin-bottom: 50px;
     color: var(--black-color);
-    font-family: var(--Tommay-font-1);
+    /* font-family: var(--Tommay-font-1); */
 }

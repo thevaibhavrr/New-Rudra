@@ -11,7 +11,8 @@ function Topdetailsabout() {
     <div style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }} >
   
     <div className='home_details_main_div_parent' >
-        <div className='home_details_div about_page_about_us_text' >About us</div>
+        {/* <div className='home_details_div about_page_about_us_text' >About us</div> */}
+        <div className='whychoose_main_div_about_text' >About us</div>
     <div className='home_details_main_div' >
         <div className='home_details_div' >
             {firstmessage}
