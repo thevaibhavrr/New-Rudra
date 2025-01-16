@@ -617,6 +617,7 @@
   }
   .contact_us_map{
     padding: 20px;
+    border-radius: 10px;
   }
   .contect_form_input {
     width: 100%;
