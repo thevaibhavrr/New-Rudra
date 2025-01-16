@@ -16,7 +16,7 @@ function Navbar() {
         <>
             <div className="navbar_main_div">
                 <div className="navbar_main_logo">
-                    {showLogo && <img src={Logo} alt="Rudra Castings Logo" />}
+                    {showLogo && <> <Link to="/" className="Link_tag" > <img src={Logo} alt="Rudra Castings Logo" /> </Link> </>}
                 </div>
 
                 {/* Add animations using motion for icons */}
