@@ -79,7 +79,7 @@
     width: 280px;
   }
 }
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
   .process_image_first,
   .process_image_second,
   .process_image_third {
