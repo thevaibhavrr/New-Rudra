@@ -13,7 +13,7 @@ const ProductCard = ({ title, message, image }) => (
     <div className="product-image">
       <img src={image} alt={title} />
     </div>
-    <div className="product-content">
+    <div className="product-content first_product_cart">
       <h2 className="product-title">{title}</h2>
       <p className="product-message">{message}</p>
     </div>
@@ -25,7 +25,7 @@ const ProductCards = ({ title, message, image }) => (
       <h2 className="product-title">{title}</h2>
       <p className="product-message">{message}</p>
     </div>
-    <div className="product-image">
+    <div className="product-image second_product_cart">
       <img src={image} alt={title} />
     </div>
   </div>

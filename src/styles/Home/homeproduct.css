@@ -101,7 +101,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .product-container {
       gap: 50px;
   }
@@ -109,10 +109,20 @@
   .product-card {
       flex-direction: column;
       max-width: 100%;
+      border-radius: 10px;
   }
+  .first_product_cart{
+    margin-top: -10px;
+  }
+  .second_product_cart img{
+margin-bottom: -5px;
+  }
+  .product-image{
+    height: 230px;
 
+  }
   .product-image img {
-      object-fit: contain;
+      object-fit: cover;
       height: 250px;
   }
 
