@@ -1,7 +1,7 @@
 .investment_top_main_div {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 0px;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -9,22 +9,23 @@
   margin-top: 20px;
 }
 .investment_top_title {
-  margin-top: 50px;
+  margin-top: 80px;
   font-size: 24px;
   font-weight: 500;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   font-family: var(--Tommay-font-1);
 }
 
 .investment_top_mesaage {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   word-spacing: 1px;
   letter-spacing: 1px;
   font-weight: 300;
   color: var(--border-gray-color);
   font-family: var(--Paradroid-Mono-2);
-  width: 50%;
+  width: 80%;
+  padding-bottom: 20px;
 }
 
 .investment_top_video_div {

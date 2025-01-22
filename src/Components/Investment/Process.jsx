@@ -13,7 +13,7 @@ import process3 from "../../assets/investmant/process3.png";
 function Process() {
     const data = [
         {
-            title: "1.Design & Mold Creation:",
+            title: "1.Design & Mold Creation: ",
             first: "A detailed design of the component is created using CAD software.",
             second: "A wax pattern is crafted to replicate the exact dimensions of the final part."
         },
@@ -56,16 +56,16 @@ function Process() {
                     className='process_image_first'
                     src={process1}
                     alt="Process 1"
-                    animate={{
-                        x: ["0%", "100%", "0%"], // Moving back and forth along x-axis
-                        y: ["0%", "30%", "0%"], // Moving up and down along y-axis
-                    }}
-                    transition={{
-                        repeat: Infinity, // Loop indefinitely
-                        repeatType: "loop", // Loop animation continuously
-                        duration: 10, // Total time to complete one loop (adjust as needed)
-                        ease: "easeInOut", // Smooth easing function
-                    }}
+                    // animate={{
+                    //     x: ["0%", "100%", "0%"], // Moving back and forth along x-axis
+                    //     y: ["0%", "30%", "0%"], // Moving up and down along y-axis
+                    // }}
+                    // transition={{
+                    //     repeat: Infinity, // Loop indefinitely
+                    //     repeatType: "loop", // Loop animation continuously
+                    //     duration: 10, // Total time to complete one loop (adjust as needed)
+                    //     ease: "easeInOut", // Smooth easing function
+                    // }}
                 />
             </div>
             <div className="process_images_second_div">
@@ -73,16 +73,16 @@ function Process() {
                     className='process_image_second'
                     src={process2}
                     alt="Process 2"
-                    animate={{
-                        x: ["0%", "-100%", "0%"], // Moving back and forth along x-axis in the opposite direction
-                        y: ["0%", "-30%", "0%"], // Moving up and down in the opposite direction
-                    }}
-                    transition={{
-                        repeat: Infinity, 
-                        repeatType: "loop", 
-                        duration: 12, // Duration for this image's loop
-                        ease: "easeInOut",
-                    }}
+                    // animate={{
+                    //     x: ["0%", "-100%", "0%"], // Moving back and forth along x-axis in the opposite direction
+                    //     y: ["0%", "-30%", "0%"], // Moving up and down in the opposite direction
+                    // }}
+                    // transition={{
+                    //     repeat: Infinity, 
+                    //     repeatType: "loop", 
+                    //     duration: 12, // Duration for this image's loop
+                    //     ease: "easeInOut",
+                    // }}
                 />
             </div>
             <div className="process_images_third_div">
@@ -90,16 +90,16 @@ function Process() {
                     className='process_image_third'
                     src={process3}
                     alt="Process 3"
-                    animate={{
-                        x: ["0%", "50%", "0%"], // Moving back and forth along x-axis
-                        y: ["0%", "-50%", "0%"], // Moving up and down along y-axis
-                    }}
-                    transition={{
-                        repeat: Infinity, 
-                        repeatType: "loop", 
-                        duration: 15, // Duration for this image's loop
-                        ease: "easeInOut",
-                    }}
+                    // animate={{
+                    //     x: ["0%", "50%", "0%"], // Moving back and forth along x-axis
+                    //     y: ["0%", "-50%", "0%"], // Moving up and down along y-axis
+                    // }}
+                    // transition={{
+                    //     repeat: Infinity, 
+                    //     repeatType: "loop", 
+                    //     duration: 15, // Duration for this image's loop
+                    //     ease: "easeInOut",
+                    // }}
                 />
             </div>
 

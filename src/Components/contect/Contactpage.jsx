@@ -56,7 +56,7 @@ function ContactPage() {
                                 d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
                             ></path>
                         </svg>
-                        <span class="text">Meesage Us</span>
+                        <span class="text">Message Us</span>
                         <span class="circle"></span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
                             <path
@@ -98,21 +98,21 @@ function Reacttous() {
                     <div>
                         <input
                             type="text"
-                            placeholder="NAME"
+                            placeholder="Name"
                             className="form-input-contect"
                         />
                     </div>
                     <div>
                         <input
                             type="tel"
-                            placeholder="PHONE NO."
+                            placeholder="Phone No."
                             className="form-input-contect"
                         />
                     </div>
                     <div>
                         <input
                             type="email"
-                            placeholder="EMAIL ADDRESS"
+                            placeholder="Email Address"
                             className="form-input-contect"
                         />
                     </div>
@@ -120,8 +120,8 @@ function Reacttous() {
                 <div className='message_box_contact_us' >
                     <div  >
                         <textarea
-                            placeholder="MESSAGE"
-                            className="form-textarea"
+                            placeholder="Message"
+                            className="form-textarea form-input-contect"
                         ></textarea>
                     </div>
                     <div>

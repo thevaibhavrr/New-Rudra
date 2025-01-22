@@ -38,7 +38,7 @@
 .Link_tag {
   text-decoration: none;
   color: var(--light-gray-color);
-  font-size: 16px;
+  font-size: 18px;
   transition: color 0.3s ease;
 }
 
@@ -121,13 +121,14 @@
   }
 
   .Link_tag {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .footer-info div {
-    font-size: 10px;
+    font-size: 16px;
   }
   .footer-info {
     margin-top: 30px;
+
   }
 }

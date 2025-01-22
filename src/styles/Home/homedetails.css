@@ -20,12 +20,13 @@
 }
 
 .home_details_div {
-    width: 50%;
+    width: 75%;
     color: var(--border-gray-color);
     text-align: center;
-    font-size: 18px;
+    font-size: 21px;
     word-spacing: 1px;
     letter-spacing: 1px;
+    font-weight: 500;
 }
 
 @media (max-width: 1024px) {

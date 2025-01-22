@@ -43,13 +43,13 @@
 
 /* Title inside the card */
 .home_facilities_card_div_top_title {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 500;
 }
 
 /* Message inside the card */
 .home_facilities_card_div_top_mesaage {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 2px;
     font-weight: 300;
 }
@@ -145,7 +145,7 @@
         width: 90%;
         gap: 40px;
         background: #0000005d;
-        padding: 20px 40px;
+        padding: 20px 20px;
         display: flex;
         flex-direction:row-reverse;
         align-items: center;
