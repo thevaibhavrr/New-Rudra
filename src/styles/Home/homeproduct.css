@@ -108,13 +108,13 @@
   }
 
   .product-card {
-    flex-direction: column;
+    flex-direction: column-reverse;
     max-width: 100%;
     border-radius: 10px;
   }
   .second_product_card {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .first_product_cart {
