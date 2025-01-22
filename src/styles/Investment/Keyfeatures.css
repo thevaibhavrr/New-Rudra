@@ -25,6 +25,8 @@
 }
 .keyfeature_mesaage{
   width: 100%;
+  font-family: var(--Paradroid-Mono-2);
+
   text-align: start;
 }
 
