@@ -65,7 +65,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
 }
 
 .react_to_us_form {
@@ -195,7 +195,7 @@
     position: absolute;
     z-index: -1;
     left: 5%;
-    bottom: 4%;
+    bottom: -10%;
   }
   .contact_us_image_div img {
     width: 70%;
@@ -207,7 +207,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
   }
   
   .react_to_us_form {
@@ -267,7 +267,7 @@
     position: absolute;
     z-index: -1;
     right: 12%;
-    bottom: -55%;
+    bottom: -45%;
   }
   .reach_us_image_div img {
     width: 70%;
@@ -340,7 +340,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
   }
   
   .react_to_us_form {
@@ -473,7 +472,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
   }
   
   .react_to_us_form {
@@ -593,7 +591,7 @@
     position: absolute;
     z-index: -1;
     left: 25%;
-    bottom: -8%;
+    bottom: -25%;
   }
   .contact_us_image_div img {
     width: 80%;
@@ -671,7 +669,7 @@
     position: absolute;
     z-index: -1;
     right: -0%;
-    bottom: -57%;
+    bottom: -50%;
   }
   .reach_us_image_div img {
     width: 80%;
