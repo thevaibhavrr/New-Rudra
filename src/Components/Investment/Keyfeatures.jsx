@@ -79,7 +79,7 @@ function Keyfeatures() {
             </div>
             {/* video */}
             <div className='keyfeature_video_div' >
-                <video src={keyfeature} autoPlay loop muted className='keyfeature_video' ></video>
+                <video autoplay loop playsinline muted src={keyfeature} autoPlay loop muted className='keyfeature_video' ></video>
             </div>
         </div>
     </div>
