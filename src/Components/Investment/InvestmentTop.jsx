@@ -12,7 +12,7 @@ function InvestmentTop() {
             </div>
 
             <div className='investment_top_video_div' >
-                <video  src={Investmentvideo} autoplay loop playsinline muted className='investment_top_video' ></video>
+                <video  src={Investmentvideo} autoPlay loop muted playsInline className='investment_top_video' ></video>
             </div>
         </div>
         </>

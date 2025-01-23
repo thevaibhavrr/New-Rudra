@@ -20,7 +20,7 @@ function Advantages() {
         <div className='keyfeature_mesaage_main_div ' >
             {/* video */}
             <div className='keyfeature_video_div' >
-                <video src={keyfeature} autoplay loop playsinline muted className='keyfeature_video' ></video>
+                <video src={keyfeature} autoPlay loop muted playsInline className='keyfeature_video' ></video>
             </div>
             <div className=' keyfeature_mesaage_main_div_for_advantages' >
                 {
