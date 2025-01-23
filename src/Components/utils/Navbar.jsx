@@ -43,8 +43,8 @@ function Navbar() {
                     {dropdownOpen ? (
                         <motion.svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="43"
-                            height="43"
+                            width="46"
+                            height="46"
                             fill="currentColor"
                             className="bi bi-x-lg"
                             viewBox="0 0 16 16"
@@ -58,8 +58,8 @@ function Navbar() {
                     ) : (
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="43"
-                            height="43"
+                            width="46"
+                            height="46"
                             fill="currentColor"
                             className="bi bi-list"
                             viewBox="0 0 16 16"

@@ -375,26 +375,26 @@ function Logosection() {
               transition={{ duration: 0.8, type: "spring", stiffness: 200 }}
             >
               <ul>
-                <li>
-                  <Link className="Link_tag" style={{ color: "black" }} to="/">
+                <Link className="Link_tag" style={{ color: "black" }} to="/">
+                  <li>
                     HOME
-                  </Link>
-                </li>
-                <li>
-                  <Link className="Link_tag" style={{ color: "black" }} to="/about">
+                  </li>
+                </Link>
+                <Link className="Link_tag" style={{ color: "black" }} to="/about">
+                  <li>
                     ABOUT US
-                  </Link>
-                </li>
-                <li>
-                  <Link className="Link_tag" style={{ color: "black" }} to="/investment">
+                  </li>
+                </Link>
+                <Link className="Link_tag" style={{ color: "black" }} to="/investment">
+                  <li>
                     INVESTMENT CASTING
-                  </Link>
-                </li>
-                <li>
-                  <Link className="Link_tag" style={{ color: "black" }} to="/contact">
+                  </li>
+                </Link>
+                <Link className="Link_tag" style={{ color: "black" }} to="/contact">
+                  <li>
                     CONTACT US
-                  </Link>
-                </li>
+                  </li>
+                </Link>
               </ul>
             </div>
           )}
