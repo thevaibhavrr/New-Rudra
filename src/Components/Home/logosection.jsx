@@ -100,8 +100,8 @@ function Logosection() {
             </div>
           )}
         </motion.div>
-        <video className="background-video" autoPlay loop muted>
-          <source src={Vid} autoplay loop playsinline muted type="video/mp4" />
+        <video className="background-video" autoPlay loop muted playsInline>
+          <source src={Vid} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <AnimatePresence>
